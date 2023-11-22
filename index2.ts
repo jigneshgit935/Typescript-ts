@@ -17,3 +17,14 @@ const item: Array<string> = ["jinu"]
 
 
 /////////////// Multi dimensional  /////////////////
+const singleDi: number[] = [1, 2, 4]
+console.log(singleDi);
+
+const multiDi: number[][] = [[1, 2, 4]]
+console.log(multiDi);
+
+const tripleDi: number[][][] = [[[1, 2, 4]]]
+console.log(tripleDi);
+
+
+
