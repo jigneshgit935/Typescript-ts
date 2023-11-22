@@ -80,12 +80,23 @@ function double1(x: number): number {
 function againsend(message: string): void {
     console.log(`This is my ${message}`);
 }
-againsend("message");
+// againsend("message");
 
 
+/////////////// Never  /////////////////
+function throwError(msg: string): never {
+    throw new Error(msg)
+}
 
+function infiniteLoop(): never {
+    while (true) { }
+}
 
-
+let x: never;
+function newerReturn(): never {
+    while (true) { }
+}
+x = newerReturn()
 
 
 
