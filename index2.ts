@@ -18,13 +18,48 @@ const item: Array<string> = ["jinu"]
 
 /////////////// Multi dimensional  /////////////////
 const singleDi: number[] = [1, 2, 4]
-console.log(singleDi);
+// console.log(singleDi);
 
 const multiDi: number[][] = [[1, 2, 4]]
-console.log(multiDi);
+// console.log(multiDi);
 
 const tripleDi: number[][][] = [[[1, 2, 4]]]
-console.log(tripleDi);
+// console.log(tripleDi);
 
+
+/////////////// Objects  /////////////////
+const person: { name: string, age: number, email: string } = {
+    name: "jinu",
+    age: 2,
+    email: "jinu@gmail.com"
+}
+// console.log(person.age);
+// console.log(person.email);
+// console.log(person.name);
+
+// using object as a return value 
+function printAll(): { name: string, age: number, email: string } {
+    return {
+        name: "Jignesh",
+        age: 1,
+        email: "jingesh@gmail.com",
+    }
+}
+// console.log(printAll());
+
+
+
+
+/////////////// Type Aliases  /////////////////
+type Person = {
+    name: string;
+    age: number;
+}
+
+function printType(person: Person) {
+    console.log(`Name: ${person.name}`, `Age: ${person.age}`);
+}
+const myPerson: Person = { name: "jinu", age: 23 }
+printType(myPerson)
 
 
