@@ -50,12 +50,42 @@ function add(num: number) {
 }
 // console.log(add(3));
 
-
+// by default it will be any type
 const addTwoNumber = (x: number, y: number) => {
-    return x + y
+    return x * y
 
 }
-// console.log(addTwoNumber(1, 1));
+// console.log(addTwoNumber(6, 2));
+
+
+
+/////////////// Default params value /////////////////
+function greet(person: string = "Jinu Sharma") {
+    return `Hello ${person}`
+}
+
+// console.log(greet());
+// console.log(greet("Jignesh Sharma"));
+
+
+/////////////// Return Annotations (Regular) /////////////////
+
+function double1(x: number): number {
+    return x * x
+}
+// console.log(double1(2));
+
+
+/////////////// Void in Typscript  /////////////////
+function againsend(message: string): void {
+    console.log(`This is my ${message}`);
+}
+againsend("message");
+
+
+
+
+
 
 
 
