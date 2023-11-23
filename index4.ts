@@ -72,10 +72,34 @@ class myClass {
 
 
 const myInstance = new myClass()
-console.log(`Current Value ${myInstance.myProperty}`);
+// console.log(`Current Value ${myInstance.myProperty}`);
 
 myInstance.myProperty = 2
-console.log(`Current Value ${myInstance.myProperty}`);
+// console.log(`Current Value ${myInstance.myProperty}`);
+
+
+
+
+/////////////// Interfaces  /////////////////
+interface PersonCheck {
+    firstname: string
+    age: number
+    location: string
+}
+
+const getDetails: PersonCheck = {
+    firstname: "jinu",
+    age: 23,
+    location: "Udaipur",
+}
+
+// console.log(getDetails.age, getDetails.firstname, getDetails.location);
+
+
+
+///////////////   /////////////////
+
+
 
 
 
