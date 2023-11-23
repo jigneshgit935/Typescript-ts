@@ -103,7 +103,50 @@ interface MathOperation {
 }
 
 const addtow: MathOperation = (a, b) => a + b
-console.log(addtow(2, 2));
+// console.log(addtow(2, 2));
 
 const subtract: MathOperation = (a, b) => a - b
-console.log(subtract(2, 2));
+// console.log(subtract(2, 2));
+
+
+
+
+
+///////////////  Interface for class /////////////////
+interface Vehicle {
+    start(): void
+    stop(): void
+}
+
+//class implementing interface
+class Car implements Vehicle {
+    start() {
+        console.log("Car Started");
+    }
+
+    stop() {
+        console.log("Car Stoped");
+    }
+}
+
+// Usage
+const myCar = new Car()
+myCar.start()
+myCar.stop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
