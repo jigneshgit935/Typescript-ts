@@ -99,7 +99,35 @@ function reversePair<T, U>(value1: T, value2: U): [U, T] {
 }
 
 const reversePaired = reversePair("Hello", 21)
-console.log(reversePaired);
+// console.log(reversePaired);
+
+// generic classes
+class Box<T>{
+    private content: T
+    constructor(initialContent: T) {
+        this.content = initialContent
+    }
+    getContent(): T {
+        return this.content
+    }
+    setContent(newContent: T): void {
+        this.content = newContent
+    }
+}
+const stringBox = new Box<string>("Hello, Typescript")
+// console.log(stringBox.getContent());
+
+stringBox.setContent("New Content Added")
+// console.log(stringBox.getContent());
+
+const numberBox = new Box(20)
+// console.log(numberBox.getContent());
+
+numberBox.setContent(1)
+// console.log(numberBox.getContent());
+
+
+
 
 
 
