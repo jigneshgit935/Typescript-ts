@@ -46,3 +46,42 @@ const alice: UserInfoAndUserInfo2 = {
 }
 
 // console.log(alice.age, alice.email, alice.name, alice.password);
+
+
+
+/////////////// Unions  /////////////////
+let password: string | number = 20000
+
+type UserInfoOf = {
+    first: string
+    last: string
+    age: number
+}
+
+type UserInfoOf2 = {
+    email: string
+    password: string
+}
+
+let userCheck: UserInfoOf | UserInfoOf2 = {
+    // first: "jinu",
+    // last: "sharma",
+    // age: 23
+    password: "12344",
+    email: "cuoviobnf"
+}
+
+// console.log(userCheck.last, userCheck.first, userCheck.age);
+// console.log(userCheck.password, userCheck.email);
+
+//func
+const items: (number | string)[] = [1, 2, 4, "jinu", "hello"]
+// console.log(items);
+
+
+
+
+/////////////// Literal types  /////////////////
+
+
+
