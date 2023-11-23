@@ -160,15 +160,52 @@ const jinubhai: PersonDetails = {
     }
 }
 
-greet(jinubhai)
+// greet(jinubhai)
+
+
+interface Song {
+    songName: string
+    singerName: string
+    printSongInfo(songName: string, singerName: string): string
+}
+
+const song: Song = {
+    songName: "3:59am",
+    singerName: "Divine",
+    printSongInfo(songName, singerName) {
+        return `Song: ${songName} Singer: ${singerName}`
+    }
+}
+// console.log(song.printSongInfo("3:59am", "Divine"));
+
+
+// More Examples
+interface MovieDetails {
+    readonly name: string
+    ratings: number
+    printMoreInfp(name: string, price: number, ratings: number): string | number
+}
+
+
+interface MovieGenre extends MovieDetails {
+    genre: string
+}
+
+
+const movie: MovieGenre = {
+    name: "Star Wars",
+    genre: "Action",
+    ratings: 4.0,
+    printMoreInfp(name: string, price: number, ratings: number): string | number {
+        return `Movie name: ${name} Price: ${price} Ratings: ${ratings}`
+    }
+}
+
+// console.log(movie.printMoreInfp("Animal", 2000, 3.0));
 
 
 
-
-
-
-
-
+///////////////////// interface with classes /////////////////////////
 
 
 

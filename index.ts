@@ -60,9 +60,9 @@ const addTwoNumber = (x: number, y: number) => {
 
 
 /////////////// Default params value /////////////////
-function greet(person: string = "Jinu Sharma") {
-    return `Hello ${person}`
-}
+// function greet(person: string = "Jinu Sharma") {
+//     return `Hello ${person}`
+// }
 
 // console.log(greet());
 // console.log(greet("Jignesh Sharma"));
