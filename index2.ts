@@ -60,6 +60,9 @@ function printType(person: Person) {
     console.log(`Name: ${person.name}`, `Age: ${person.age}`);
 }
 const myPerson: Person = { name: "jinu", age: 23 }
-printType(myPerson)
+// printType(myPerson)
+
+
+
 
 
