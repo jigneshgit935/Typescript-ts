@@ -177,8 +177,33 @@ function animalSound(animal: Dog | Cat): void {
 const myDog = new Dog()
 const myCat = new Cat()
 
-animalSound(myDog)
-animalSound(myCat)
+// animalSound(myDog)
+// animalSound(myCat)
+
+
+// 3.intersection types
+
+// Define two types
+type Employee = {
+    id: number
+    name: string
+}
+type Manager = {
+    department: string
+    role: string
+}
+
+// Create an intersection type
+type ManagerWithEmployeeInfo = Employee & Manager
+
+// example usage
+const manager: ManagerWithEmployeeInfo = {
+    id: 1,
+    name: "jinu",
+    department: "Engineering",
+    role: "Software Engineer"
+}
+console.log(manager.id, manager.name, manager.department, manager.role);
 
 
 
