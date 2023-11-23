@@ -230,8 +230,37 @@ const car = new CarHere()
 
 ////////////////////////// Declaration Merging ////////////////////////////
 
+// Original Interface
+interface CarDone {
+    brand: string
+    start(): void
+}
 
+// Declaration Merging (interface extension)
+interface CarDone {
+    model: string
+    stop(): void
+}
 
+//
+const MyCar: CarDone = {
+    brand: "i20",
+    model: "2018",
+    start() {
+        console.log("Started");
+
+    },
+    stop() {
+        console.log("Stopped");
+
+    },
+}
+
+// console.log(MyCar.brand);
+// console.log(MyCar.model);
+
+// MyCar.start()
+// MyCar.stop()
 
 
 
