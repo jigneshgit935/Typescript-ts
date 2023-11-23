@@ -97,9 +97,13 @@ const getDetails: PersonCheck = {
 
 
 
-///////////////   /////////////////
+///////////////  Interface for functions /////////////////
+interface MathOperation {
+    (x: number, y: number): number
+}
 
+const addtow: MathOperation = (a, b) => a + b
+console.log(addtow(2, 2));
 
-
-
-
+const subtract: MathOperation = (a, b) => a - b
+console.log(subtract(2, 2));
