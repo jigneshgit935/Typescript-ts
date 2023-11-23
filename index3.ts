@@ -114,3 +114,15 @@ const [first, second] = myTuple1
 
 
 /////////////// Enums  /////////////////
+enum WeatherCondition {
+    Sunny = "sunny",
+    Cloudy = "cloudy",
+    Rainy = "rainy"
+}
+
+// console.log(WeatherCondition.Sunny);
+// console.log(WeatherCondition);
+
+const currentWeather = WeatherCondition.Cloudy
+console.log(`Current weather is ${currentWeather}`);
+
