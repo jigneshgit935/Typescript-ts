@@ -61,5 +61,16 @@ const result = getRandomKeyValuePair<string>(stringObject)
 
 const numberObject = { a: 1, b: 2, c: 3 }
 const numberValuePair = getRandomKeyValuePair<number>(numberObject)
-console.log(numberValuePair);
+// console.log(numberValuePair);
+
+
+//////////////////////////more example on generics array filter ///////////////////////
+function arrayFilter<T>(array: T[], condition: (item: T) => boolean): T[] {
+    return array.filter((item) => condition(item))
+}
+const numArray = [1, 2, 3, 4, 4, 5, 6, 7, 7]
+const getEvenNumber = arrayFilter<number>(numArray, (num) => num % 2 === 0)
+console.log(getEvenNumber);
+
+
 
