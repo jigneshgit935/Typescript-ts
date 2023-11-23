@@ -70,7 +70,14 @@ function arrayFilter<T>(array: T[], condition: (item: T) => boolean): T[] {
 }
 const numArray = [1, 2, 3, 4, 4, 5, 6, 7, 7]
 const getEvenNumber = arrayFilter<number>(numArray, (num) => num % 2 === 0)
-console.log(getEvenNumber);
+// console.log(getEvenNumber);
+
+const stringWord = ["apple", "jignesh", "janee", "vikas", "niku"]
+const giveShortWords = arrayFilter<string>(stringWord, (word) => word.length > 6)
+
+console.log(giveShortWords);
+
+
 
 
 
