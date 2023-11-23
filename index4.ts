@@ -206,6 +206,29 @@ const movie: MovieGenre = {
 
 
 ///////////////////// interface with classes /////////////////////////
+interface Vehicle {
+    start(): void
+    stop(): void
+}
+
+class CarHere implements Vehicle {
+    start(): void {
+        console.log("Car is starting");
+
+    }
+    stop(): void {
+        console.log("Car is stopping");
+
+    }
+}
+const car = new CarHere()
+// car.start();
+// car.stop();
+
+
+
+
+////////////////////////// Declaration Merging ////////////////////////////
 
 
 
