@@ -22,6 +22,20 @@ function UniqueDataTypesFunc<Type>(item: Type, defaultValue: Type): [Type, Type]
     return [item, defaultValue]
 }
 
-console.log(UniqueDataTypesFunc<number>(12, 12));
-console.log(UniqueDataTypesFunc<string>("jinu", "sharma"));
-console.log(UniqueDataTypesFunc<boolean>(false, true));
+// console.log(UniqueDataTypesFunc<number>(12, 12));
+// console.log(UniqueDataTypesFunc<string>("jinu", "sharma"));
+// console.log(UniqueDataTypesFunc<boolean>(false, true));
+
+
+interface Dog {
+    name: string
+    breed: string
+}
+
+
+const dog1 = UniqueDataTypesFunc<Dog>(
+    { name: "Buddy", breed: "Labrodar" },
+    { name: "item", breed: "Unknown" }
+)
+
+// console.log(dog1);
