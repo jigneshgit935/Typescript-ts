@@ -35,9 +35,9 @@ class Persona {
 
 
 let p1 = new Persona("jinu", "sharma")
-console.log(p1);
-console.log(p1.getName());
-console.log(p1.last);
+// console.log(p1);
+// console.log(p1.getName());
+// console.log(p1.last);
 
 
 
@@ -49,4 +49,10 @@ class Human extends Persona {
 }
 
 const jin = new Human("jignesh", "sharma", 23)
-console.log(jin);
+// console.log(jin);
+
+
+
+
+
+///////////////   /////////////////
