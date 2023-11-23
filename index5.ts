@@ -91,7 +91,16 @@ const fruitArray: Fruit[] = [
 ]
 
 const redFruit = arrayFilter<Fruit>(fruitArray, (fruit) => fruit.color === "Red")
-console.log(redFruit);
+// console.log(redFruit);
+
+//////////////////generic fn which takes multiples types
+function reversePair<T, U>(value1: T, value2: U): [U, T] {
+    return [value2, value1]
+}
+
+const reversePaired = reversePair("Hello", 21)
+console.log(reversePaired);
+
 
 
 
