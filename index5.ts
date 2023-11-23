@@ -39,3 +39,27 @@ const dog1 = UniqueDataTypesFunc<Dog>(
 )
 
 // console.log(dog1);
+
+
+
+// generics fn go get a random key value pair from an object
+function getRandomKeyValuePair<T>(obj: { [key: string]: T }): {
+    key: string
+    value: T
+} {
+    const keys = Object.keys(obj)
+    const randKey = keys[Math.floor(Math.random() * keys.length)]
+    return { key: randKey, value: obj[randKey] }
+}
+
+
+const stringObject = { a: "apple", b: "banana", c: "cherry" }
+const result = getRandomKeyValuePair<string>(stringObject)
+// console.log(result);
+
+
+
+const numberObject = { a: 1, b: 2, c: 3 }
+const numberValuePair = getRandomKeyValuePair<number>(numberObject)
+console.log(numberValuePair);
+
