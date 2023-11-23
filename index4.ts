@@ -131,8 +131,63 @@ class Car implements Vehicle {
 
 // Usage
 const myCar = new Car()
-myCar.start()
-myCar.stop()
+// myCar.start()
+// myCar.stop()
+
+
+
+
+
+///////////////  Interface /////////////////
+interface PersonDetails {
+    firstname: string
+    lastname: string
+    age: number
+    sayHello(): void
+}
+
+function greet(person: PersonDetails) {
+    console.log(`Hello, ${person.firstname} ${person.lastname} `);
+    person.sayHello()
+}
+
+const jinubhai: PersonDetails = {
+    firstname: "jinu",
+    lastname: "sharma",
+    age: 23,
+    sayHello() {
+        console.log("Hello jinu welcome");
+    }
+}
+
+greet(jinubhai)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
