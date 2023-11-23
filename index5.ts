@@ -127,6 +127,28 @@ numberBox.setContent(1)
 // console.log(numberBox.getContent());
 
 
+//////////////////////// Type Narrowing ///////////////////////
+// 1.Type Guards
+
+
+// Define a union type
+type myType = string | number
+
+// Example fn with type guard
+function exampleFunction(value: myType): void {
+    // Type gurad using typeof
+    if (typeof value === "string") {
+        // Within this block, Typescript knows that "value" is a string 
+        console.log(value.toUpperCase());
+    }
+    else {
+        // Within this block, Typescript knows that "value" is a number 
+        console.log(value.toFixed(2));
+    }
+}
+// exampleFunction("hello")
+exampleFunction(21)
+
 
 
 
