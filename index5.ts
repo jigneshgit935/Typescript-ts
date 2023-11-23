@@ -33,10 +33,10 @@ interface Dog {
 }
 
 
-const dog1 = UniqueDataTypesFunc<Dog>(
-    { name: "Buddy", breed: "Labrodar" },
-    { name: "item", breed: "Unknown" }
-)
+// const dog1 = UniqueDataTypesFunc<Dog>(
+//     { name: "Buddy", breed: "Labrodar" },
+//     { name: "item", breed: "Unknown" }
+// )
 
 // console.log(dog1);
 
@@ -147,7 +147,60 @@ function exampleFunction(value: myType): void {
     }
 }
 // exampleFunction("hello")
-exampleFunction(21)
+// exampleFunction(21)
+
+
+// 2.instanceof operator
+class Dog {
+    bark(): void {
+        console.log("Woof!");
+    }
+}
+class Cat {
+    meow(): void {
+        console.log("Meow!");
+    }
+}
+//example fn with instanceof type guard 
+function animalSound(animal: Dog | Cat): void {
+    if (animal instanceof Dog) {
+
+        // Within this block, Typescript knows that "animal" is an instance of dog 
+        animal.bark()
+    } else {
+
+        // Within this block, Typescript knows that "animal" is an instance of cat 
+        animal.meow()
+    }
+}
+// example usage
+const myDog = new Dog()
+const myCat = new Cat()
+
+animalSound(myDog)
+animalSound(myCat)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
