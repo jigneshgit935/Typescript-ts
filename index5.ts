@@ -75,7 +75,24 @@ const getEvenNumber = arrayFilter<number>(numArray, (num) => num % 2 === 0)
 const stringWord = ["apple", "jignesh", "janee", "vikas", "niku"]
 const giveShortWords = arrayFilter<string>(stringWord, (word) => word.length > 6)
 
-console.log(giveShortWords);
+// console.log(giveShortWords);
+
+
+// more examples
+interface Fruit {
+    name: string
+    color: string
+}
+
+const fruitArray: Fruit[] = [
+    { name: "Apple", color: "Red" },
+    { name: "Banana", color: "Yellow" },
+    { name: "Cherry", color: "Red" }
+]
+
+const redFruit = arrayFilter<Fruit>(fruitArray, (fruit) => fruit.color === "Red")
+console.log(redFruit);
+
 
 
 
