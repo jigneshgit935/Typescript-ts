@@ -82,6 +82,19 @@ const items: (number | string)[] = [1, 2, 4, "jinu", "hello"]
 
 
 /////////////// Literal types  /////////////////
+let colors: "red" | "blue" | "green"
+colors = "red"
+// colors = "violet"
 
 
 
+let num: 1 | 2 | 3
+num = 1
+// num = 4
+
+let isTrue: true
+isTrue = true
+// isTrue = false
+
+
+/////////////// Literal types  /////////////////
