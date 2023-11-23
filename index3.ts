@@ -97,4 +97,20 @@ isTrue = true
 // isTrue = false
 
 
-/////////////// Literal types  /////////////////
+/////////////// Tuples  /////////////////
+let myTuple: [string, number] = ["jinu", 23]
+// console.log(myTuple[0]);
+// console.log(myTuple[1]);
+
+
+
+//---destructuring individual Element
+let myTuple1: [string, number] = ["jinu", 23]
+const [first, second] = myTuple1
+// console.log(first);
+// console.log(second);
+
+
+
+
+/////////////// Enums  /////////////////
